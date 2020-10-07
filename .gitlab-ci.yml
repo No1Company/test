@@ -1,0 +1,13 @@
+image: openjdk:8
+stages:
+  - build
+build: 
+  stage: build
+  script:
+    - javac HelloWorld.java
+    - java HelloWorld
+  artifacts:
+  
+    paths:
+    - ./HelloWorld.*
+# vi: ts=2 sw=2 et
